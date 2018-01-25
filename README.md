@@ -5,8 +5,9 @@ To query a gene or pairwise interval of interest for the predicted AAMR hotspots
 
 ##Query prediction results at a gene-level
 
-We assigned an AAMR risk score for each of 12,704 genes. The user could input a gene name (e.g., SPAST) and receive the score, rank and the position (a red line) on the distribution of AAMR risk scores. 
+We assigned an AAMR risk score for each of 12,074 OMIM genes as well as 23,637 Refseq genes. The user could input a gene name (e.g., SPAST) and receive the count of all Alu pairs and predicted CNV-Alu pairs, score, rank and the position (a red line) on the distribution of AAMR risk scores. We suggest a score of 0.6 as a loose ‘cut off’ for at-risk genes. Genes with a score greater than 0.6 might be more susceptible for AAMR. 
+ 
 
 ##Query prediction results at a genomic interval-level 
 
-For pairs of genomic intervals, such as the aCGH results, we could indicate whether any predicted Alu pair is intersecting the range pair of interest. We show the query results in a table. This process may take minutes as ~13 millions of predicted Alu pairs are quired.
+For pairs of genomic intervals, such as the uncertain regions of aCGH results, we could indicate whether any predicted Alu pair is intersecting with the range pair of interest. We show the query results in a table. This process may take minutes as ~13 millions of predicted Alu pairs are quired. Data in both hg19 and hg38 are available. Of note, the analyses were performed using hg19 reference build, and the results were remapped to hg38. About 99.6% of tested Alu pairs remained after liftover.
